@@ -1,7 +1,7 @@
 (require 'ido)
 
 (ido-mode t)
-;(setq ido-enable-flex-matching t) ;模糊匹配
+(setq ido-enable-flex-matching t) ;模糊匹配
 (setq ido-everywhere nil)         ;disable ido everyting
 
 (defun ido-for-mode(prompt the-mode)
