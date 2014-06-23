@@ -16,7 +16,12 @@
 
 (desktop-save-mode 1)
 (setq history-length 250)
-(setq desktop-path '("~/.emacs.d/.desktop/"))
+(setq my-desktop-path "~/.emacs.d/.desktop/")
+(setq desktop-path (list my-desktop-path))
+(if
+    (not (file-exists-p my-desktop-path))
+    (make-directory my-desktop-path)
+)
 (add-to-list 'desktop-globals-to-save 'file-name-history)
 
 ;;deal with tab

@@ -13,5 +13,6 @@
 (require 'emacs-droid-configure)
 (require 'eproject-configure)
 (require 'redspace-configure)
+(require 'magit-configure)
 
 (provide 'configure)

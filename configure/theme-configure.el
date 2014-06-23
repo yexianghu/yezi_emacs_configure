@@ -22,7 +22,7 @@ ignored: use `custom-enabled-themes' instead."
 (unless (boundp 'custom-enabled-themes)
   (defun color-theme-terminal ()
     (interactive)
-nnn    (color-theme-sanityinc-solarized-dark))
+    (color-theme-sanityinc-solarized-dark))
 
   (defun apply-best-color-theme-for-frame-type (frame)
     (with-selected-frame frame
