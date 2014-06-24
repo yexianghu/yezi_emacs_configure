@@ -33,4 +33,14 @@
       (interactive)
       (mapc 'kill-buffer (delq (current-buffer) (buffer-list))))
 
+;;for java
+(add-hook 'java-mode-hook
+              (lambda ()
+                "Treat Java 1.5 @-style annotations as comments."
+                (setq c-comment-start-regexp "(@|/(/|[*][*]?))")
+                (modify-syntax-entry ?@ "< b" java-mode-syntax-table)))
+
+;;for brace indent
+(setq c-default-style "bsd" c-basic-offset 4)
+
 (provide 'common-configure)
