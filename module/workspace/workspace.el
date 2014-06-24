@@ -5,7 +5,6 @@
 
 (defun list-workspaces ()
     "list all workspaces"
-    
 )
 
 (defun create-workspace ()

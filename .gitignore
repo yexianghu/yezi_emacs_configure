@@ -1,7 +1,8 @@
-elpa/
+elpa
 .desktop
 *.dat
 auto-save-list
 projectile-bookmarks.eld
 projectile.cache
 semanticdb
+session.*

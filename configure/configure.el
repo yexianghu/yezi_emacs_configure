@@ -14,5 +14,6 @@
 (require 'eproject-configure)
 (require 'redspace-configure)
 (require 'magit-configure)
+(require 'textmate-configure)
 
 (provide 'configure)
