@@ -33,12 +33,29 @@
       (interactive)
       (mapc 'kill-buffer (delq (current-buffer) (buffer-list))))
 
+(defun temp-buffer ()
+  (interactive)
+  (switch-to-buffer (make-temp-name "temp-buffer")))
+
 ;;for java
 (add-hook 'java-mode-hook
               (lambda ()
                 "Treat Java 1.5 @-style annotations as comments."
                 (setq c-comment-start-regexp "(@|/(/|[*][*]?))")
                 (modify-syntax-entry ?@ "< b" java-mode-syntax-table)))
+
+(global-set-key
+  (kbd "<f5>")
+  (lambda (&optional force-reverting)
+    "Interactive call to revert-buffer. Ignoring the auto-save
+ file and not requesting for confirmation. When the current buffer
+ is modified, the command refuses to revert it, unless you specify
+ the optional argument: force-reverting to true."
+    (interactive "P")
+    ;;(message "force-reverting value is %s" force-reverting)
+    (if (or force-reverting (not (buffer-modified-p)))
+        (revert-buffer :ignore-auto :noconfirm)
+      (error "The buffer has been modified"))))
 
 ;;for brace indent
 (setq c-default-style "bsd" c-basic-offset 4)
