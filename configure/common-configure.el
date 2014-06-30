@@ -60,4 +60,15 @@
 ;;for brace indent
 (setq c-default-style "bsd" c-basic-offset 4)
 
+;;for file name
+(defun copy-file-path ()
+  (interactive)
+  (kill-new (buffer-file-name))
+)
+
+(defun copy-buffer-name ()
+  (interactive)
+  (kill-new (buffer-name))
+)
+
 (provide 'common-configure)

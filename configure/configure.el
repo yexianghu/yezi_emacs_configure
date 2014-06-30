@@ -15,5 +15,7 @@
 (require 'redspace-configure)
 (require 'magit-configure)
 (require 'textmate-configure)
+(require 'point-undo-configure)
+;(require 'point-stack-configure)
 
 (provide 'configure)

@@ -3,5 +3,5 @@
 (global-set-key (kbd "C-c m") 'set-mark-command)
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 (global-set-key (kbd "C-c g") 'goto-line)
-
+(global-set-key (kbd "C-c n") 'temp-buffer)
 (provide 'key-common)
