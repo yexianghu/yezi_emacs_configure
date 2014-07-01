@@ -17,5 +17,7 @@
 (require 'textmate-configure)
 (require 'point-undo-configure)
 ;(require 'point-stack-configure)
+;(require 'jdee-configure)
+(require 'w3m-configure)
 
 (provide 'configure)
