@@ -37,6 +37,10 @@
   (interactive)
   (switch-to-buffer (make-temp-name "temp-buffer")))
 
+(defun switch-to-previous-buffer ()
+      (interactive)
+      (switch-to-buffer (other-buffer (current-buffer) 1)))
+
 ;;for java
 (add-hook 'java-mode-hook
               (lambda ()
@@ -71,4 +75,9 @@
   (kill-new (buffer-name))
 )
 
+;;for mac
+(setq mac-option-key-is-meta nil)
+(setq mac-command-key-is-meta t)
+(setq mac-command-modifier 'meta)
+(setq mac-option-modifier nil)
 (provide 'common-configure)

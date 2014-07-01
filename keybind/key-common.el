@@ -4,4 +4,5 @@
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 (global-set-key (kbd "C-c g") 'goto-line)
 (global-set-key (kbd "C-c n") 'temp-buffer)
+(global-set-key (kbd "C-;") 'switch-to-previous-buffer)
 (provide 'key-common)
