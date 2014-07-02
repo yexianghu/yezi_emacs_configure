@@ -3,7 +3,7 @@
 
 ;;show line number
 (global-linum-mode 1)
-
+(setq debug-on-error t)
 ;;for backup fils
 (setq backup-directory-alist `(("." . "~/.saves")))
 (setq backup-by-copying t)
