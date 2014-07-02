@@ -119,7 +119,11 @@ Otherwise, return nil."
     (equal (point) (w3m-get-prev-link-start))))
 
 (defun convert-html()
-  (w3m-buffer)
+  ;(w3m-buffer)
+  ;(setq tmp-w3m-buf-name (make-temp-name (buffer-name)))
+  ;(switch-to-buffer tmp-w3m-buf-name)
+  ;(copy-to-buffer tmp-w3m-buf-name)
 )
+
 (add-hook 'html-mode-hook 'convert-html)
 (provide 'w3m-configure)
