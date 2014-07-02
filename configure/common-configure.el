@@ -74,6 +74,8 @@
   (interactive)
   (kill-new (buffer-name))
 )
+(defalias 'cfp 'copy-file-path)
+(defalias 'cbn 'copy-buffer-name)
 
 ;;for mac
 (setq mac-option-key-is-meta nil)
