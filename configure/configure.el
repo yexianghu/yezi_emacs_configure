@@ -19,6 +19,8 @@
 ;(require 'point-stack-configure)
 ;(require 'jdee-configure)
 (require 'w3m-configure)
+(require 'bookmark+-configure)
+;(require 'icicles-configure)
 
 
 (provide 'configure)
