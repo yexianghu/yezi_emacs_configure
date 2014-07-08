@@ -5,4 +5,6 @@
 (global-set-key (kbd "C-c g") 'goto-line)
 (global-set-key (kbd "C-c n") 'temp-buffer)
 (global-set-key (kbd "C-;") 'switch-to-previous-buffer)
+(global-set-key (kbd "C-c f") 'indent-region)
+
 (provide 'key-common)
