@@ -5,3 +5,4 @@
 ;(global-srecode-minor-mode 1)            ; Enable template insertion menu
 
 (provide 'cedet-configure)
+
