@@ -13,6 +13,6 @@
 (global-set-key (kbd "M-h") 'highlight-symbol-at-point)
 (global-set-key (kbd "M-n") 'highlight-symbol-next)
 (global-set-key (kbd "M-p") 'highlight-symbol-prev)
-;(global-set-key (kbd "") 'highlight-symbol-query-replace)
+(global-set-key (kbd "M-s") 'highlight-symbol-query-replace)
 
 (provide 'highlight-configure)
