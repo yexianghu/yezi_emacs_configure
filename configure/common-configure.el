@@ -86,6 +86,12 @@
 (defalias 'cfp 'copy-file-path)
 (defalias 'cbn 'copy-buffer-name)
 
+;;yes/no to y/n
+(fset 'yes-or-no-p 'y-or-n-p)
+
+;;disable tool-bar
+(tool-bar-mode -1)
+
 ;;for mac
 (setq mac-option-key-is-meta nil)
 (setq mac-command-key-is-meta t)

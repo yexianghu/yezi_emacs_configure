@@ -36,7 +36,7 @@
       (all-completions "" obarray 'commandp))))))
 
                                         ;Make Ido complete almost anything (except the stuff where it shouldn't)
-(defvar ido-enable-replace-completing-read t
+(defvar ido-enable-replace-completing-read nil
   "If t, use ido-completing-read instead of completing-read if possible.
 
     Set it to nil using let in around-advice for functions where the
