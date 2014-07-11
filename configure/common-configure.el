@@ -1,6 +1,14 @@
 ;(setq tab-always-indent 'complete)
 ;(add-to-list 'completion-styles 'initials t)
 
+;; env
+(setenv "PATH"
+  (concat
+   "~/bin" ";"
+   (getenv "PATH")
+  )
+)
+
 ;;show line number
 (global-linum-mode 1)
 (setq debug-on-error t)
