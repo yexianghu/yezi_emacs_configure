@@ -22,6 +22,6 @@
 ;(require 'bookmark+-configure)
 ;(require 'icicles-configure)
 ;(require 'cedet-configure)
-;(require 'ggtags-configure)
+(require 'ggtags-configure)
 
 (provide 'configure)

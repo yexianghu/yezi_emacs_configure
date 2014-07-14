@@ -273,20 +273,22 @@ The return value is passed to `ggtags-print-definition-function'."
   :type 'boolean
   :group 'ggtags)
 
-(defcustom ggtags-mode-prefix-key "\C-c"
-  "Key binding used for `ggtags-mode-prefix-map'.
-Users should change the value using `customize-variable' to
-properly update `ggtags-mode-map'."
-  :set (lambda (sym value)
-         (when (bound-and-true-p ggtags-mode-map)
-           (let ((old (and (boundp sym) (symbol-value sym))))
-             (and old (define-key ggtags-mode-map old nil)))
-           (and value
-                (bound-and-true-p ggtags-mode-prefix-map)
-                (define-key ggtags-mode-map value ggtags-mode-prefix-map)))
-         (set-default sym value))
-  :type 'key-sequence
-  :group 'ggtags)
+;;xianghu comment it for disable keybind
+
+ (defcustom ggtags-mode-prefix-key "\C-c"
+    "Key binding used for `ggtags-mode-prefix-map'.
+  Users should change the value using `customize-variable' to
+  properly update `ggtags-mode-map'."
+    :set (lambda (sym value)
+           (when (bound-and-true-p ggtags-mode-map)
+             (let ((old (and (boundp sym) (symbol-value sym))))
+               (and old (define-key ggtags-mode-map old nil)))
+             (and value
+                  (bound-and-true-p ggtags-mode-prefix-map)
+                  (define-key ggtags-mode-map value ggtags-mode-prefix-map)))
+           (set-default sym value))
+    :type 'key-sequence
+    :group 'ggtags)
 
 (defcustom ggtags-completing-read-function nil
   "Ggtags specific `completing-read-function' (which see).
@@ -1951,12 +1953,13 @@ When finished invoke CALLBACK in BUFFER with process exit status."
     (define-key m "\M-?" 'ggtags-show-definition)
     m))
 
+
 (defvar ggtags-mode-map
   (let ((map (make-sparse-keymap))
         (menu (make-sparse-keymap "Ggtags")))
-    (define-key map "\M-." 'ggtags-find-tag-dwim)
-    (define-key map (kbd "M-]") 'ggtags-find-reference)
-    (define-key map (kbd "C-M-.") 'ggtags-find-tag-regexp)
+    ;(define-key map "\M-." 'ggtags-find-tag-dwim)
+    ;(define-key map (kbd "M-]") 'ggtags-find-reference)
+    ;(define-key map (kbd "C-M-.") 'ggtags-find-tag-regexp)
     (define-key map ggtags-mode-prefix-key ggtags-mode-prefix-map)
     ;; Menu items
     (define-key map [menu-bar ggtags] (cons "Ggtags" menu))
