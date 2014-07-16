@@ -237,7 +237,7 @@ in current project."
   :type 'integer
   :group 'ggtags)
 
-(defcustom ggtags-enable-navigation-keys t
+(defcustom ggtags-enable-navigation-keys nil
   "If non-nil key bindings in `ggtags-navigation-map' are enabled."
   :safe 'booleanp
   :type 'boolean
@@ -437,7 +437,7 @@ Nil means using the value of `completing-read-function'."
                ;; in case `global' not found
                (and (zerop (process-file (ggtags-program-path "global")
                                          nil nil nil
-                                         "--path-style" "shorter" "--help"))
+                                         "--path-style" "through" "--help"))
                     'has-path-style)))
             ;; http://thread.gmane.org/gmane.comp.gnu.global.bugs/1542
             (has-color
@@ -813,7 +813,7 @@ Do nothing if GTAGS exceeds the oversize limit unless FORCE."
                                "--color=always")
                           (and (ggtags-find-project)
                                (ggtags-project-has-path-style (ggtags-find-project))
-                               "--path-style=shorter")
+                               "--path-style=through")
                           (and ggtags-global-treat-text "--other")
                           (pcase cmd
                             ((pred stringp) cmd)
