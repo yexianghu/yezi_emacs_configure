@@ -429,7 +429,7 @@ Nil means using the value of `completing-read-function'."
              (when rtags-size
                (and (or (> rtags-size (* 32 1024))
                         (with-demoted-errors "ggtags-make-project: %S"
-                          (not (equal "" (ggtags-process-string "global" "-crs")))))
+                          (not (equal "" (ggtags-process-string "global" "-cr")))))
                     'has-refs)))
             ;; http://thread.gmane.org/gmane.comp.gnu.global.bugs/1518
             (has-path-style
