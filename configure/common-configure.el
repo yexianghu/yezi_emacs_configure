@@ -4,7 +4,7 @@
 
 ;;show line number
 (global-linum-mode 1)
-(setq debug-on-error t)
+;(setq debug-on-error t)
 ;;for backup fils
 (setq backup-directory-alist `(("." . "~/.saves")))
 (setq backup-by-copying t)
@@ -98,4 +98,14 @@
 (setq mac-command-key-is-meta t)
 (setq mac-command-modifier 'meta)
 (setq mac-option-modifier nil)
+
+;;for hs-minor-mode
+(add-hook 'c-mode-common-hook
+          (lambda ()
+            (when (derived-mode-p 'c-mode 'c++-mode 'java-mode)
+              (hs-minor-mode t)
+              (local-set-key (kbd "C-+") 'hs-toggle-hiding))))
+
+
+
 (provide 'common-configure)

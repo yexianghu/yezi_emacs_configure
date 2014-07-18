@@ -8,4 +8,8 @@
 (global-set-key (kbd "C-c f") 'indent-region)
 (global-set-key (kbd "C-c c") 'comment-region)
 (global-set-key (kbd "C-c u") 'uncomment-region)
+(global-set-key (kbd "C-M-[")  'windmove-left)
+(global-set-key (kbd "C-M-]") 'windmove-right)
+(global-set-key (kbd "C-M-=")    'windmove-up)
+(global-set-key (kbd "C-M-'")  'windmove-down)
 (provide 'key-common)
