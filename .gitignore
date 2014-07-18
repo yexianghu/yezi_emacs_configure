@@ -1,3 +1,4 @@
+abbrev_defs
 *.elc
 .DS_Store
 elpa

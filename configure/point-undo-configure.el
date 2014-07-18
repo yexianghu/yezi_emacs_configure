@@ -2,7 +2,7 @@
 
 (require 'point-undo)
 
-;(define-key global-map (kbd "M-u") 'point-undo)
-;(define-key global-map (kbd "M-r") 'point-redo)
+(define-key global-map (kbd "<f7>") 'point-undo)
+(define-key global-map (kbd "<f8>") 'point-redo)
 
 (provide 'point-undo-configure)
