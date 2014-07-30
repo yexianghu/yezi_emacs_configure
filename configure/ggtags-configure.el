@@ -18,4 +18,6 @@
   (local-set-key (kbd "C-+") 'ggtags-find-reference)
   (local-set-key (kbd "M-<f3>") 'ggtags-find-reference)
 )
+
+(global-set-key (kbd "C-c o") 'ggtags-find-file)
 (provide 'ggtags-configure)
