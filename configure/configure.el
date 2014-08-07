@@ -7,7 +7,7 @@
 (require 'autocomplete-configure)
 ;(require 'elisphelp-configure)
 (require 'common-configure)
-;(require 'projectile-configure)
+(require 'projectile-configure)
 (require 'highlight-configure)
 (require 'theme-configure)
 ;(require 'emacs-droid-configure)

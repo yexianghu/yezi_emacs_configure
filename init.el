@@ -37,4 +37,6 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(font-lock-doc-string-face ((t (:foreground "#586e75"))) t))
+ '(font-lock-doc-string-face ((t (:foreground "#586e75"))) t)
+ '(helm-ff-directory ((t (:background "dim gray" :foreground "#2aa198"))))
+ '(helm-selection ((t (:inherit highlight :background "medium blue" :underline t)))))
