@@ -1,7 +1,6 @@
 ;(setq tab-always-indent 'complete)
 ;(add-to-list 'completion-styles 'initials t)
 
-
 ;;show line number
 (global-linum-mode 1)
 ;(setq debug-on-error t)
@@ -106,6 +105,17 @@
               (hs-minor-mode t)
               (local-set-key (kbd "C-+") 'hs-toggle-hiding))))
 
+
+;for scroll
+(setq scroll-conservatively 10000)
+(setq mouse-wheel-scroll-amount '(2 ((shift) . 2) ((control) . nil)))
+(setq mouse-wheel-progressive-speed nil)
+
+;custom occur
+(defun cust_occur (exp line)
+    (interactive "Mwhich to find:\nNline:")
+    (occur exp line)
+)
 
 
 (provide 'common-configure)

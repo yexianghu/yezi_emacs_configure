@@ -25,5 +25,5 @@
 (require 'ggtags-configure)
 (require 'speedbar-configure)
 (require 'ecb-configure)
-
+(require 'window-number-configure)
 (provide 'configure)
