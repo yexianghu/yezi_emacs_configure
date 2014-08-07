@@ -18,7 +18,7 @@
 (require 'point-undo-configure)
 ;(require 'point-stack-configure)
 (require 'jdee-configure)
-;(require 'w3m-configure)
+(require 'w3m-configure)
 ;(require 'bookmark+-configure)
 ;(require 'icicles-configure)
 ;(require 'cedet-configure)
@@ -26,4 +26,6 @@
 (require 'speedbar-configure)
 (require 'ecb-configure)
 (require 'window-number-configure)
+(require 'org-mode-configure)
+
 (provide 'configure)
