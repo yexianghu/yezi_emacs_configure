@@ -23,9 +23,10 @@
 ;(require 'icicles-configure)
 ;(require 'cedet-configure)
 (require 'ggtags-configure)
-(require 'speedbar-configure)
+;(require 'speedbar-configure)
 (require 'ecb-configure)
 (require 'window-number-configure)
 (require 'org-mode-configure)
+(require 'ibus-configure)
 
 (provide 'configure)

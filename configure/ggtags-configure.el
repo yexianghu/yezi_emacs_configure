@@ -10,7 +10,7 @@
 
 (defun ggtags-set-key()
   (local-set-key (kbd "C-M-=") 'ggtags-find-definition)
-  (local-set-key (kbd "<f3>") 'ggtags-find-definition)
+  ;(local-set-key (kbd "<f3>") 'ggtags-find-definition);;replace by imenu
   (local-set-key (kbd "M-+") 'ggtags-find-tag-regexp)
   (local-set-key (kbd "M-<f11>") 'ggtags-find-tag-regexp)
   (local-set-key (kbd "C-=") 'ggtags-find-tag-dwim)

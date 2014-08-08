@@ -116,6 +116,6 @@
     (interactive "Mwhich to find:\nNline:")
     (occur exp line)
 )
-
+;(global-unset-key (kbd "C-SPC"))
 
 (provide 'common-configure)
