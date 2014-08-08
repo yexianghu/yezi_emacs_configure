@@ -28,5 +28,6 @@
 (require 'window-number-configure)
 (require 'org-mode-configure)
 (require 'ibus-configure)
+;(require 'swbuff-configure)
 
 (provide 'configure)
