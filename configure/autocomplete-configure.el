@@ -9,6 +9,11 @@
 (require 'auto-complete-config)
 (ac-config-default)
 
+(require-package 'org-ac)
+(require 'org-ac)
+
+(org-ac/config-default)
+
 
 ;;for auto-java-complete
 ;(require 'ajc-java-complete-config)

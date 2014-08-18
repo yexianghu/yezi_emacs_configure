@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: note-function
+# key: func
+# --
+Define:
+Description:
+$0
+e.g.
