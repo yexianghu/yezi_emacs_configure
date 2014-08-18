@@ -128,4 +128,6 @@
 
 ;(global-unset-key (kbd "C-SPC"))
 
+(setq visible-bell t
+ ring-bell-function 'ignore)
 (provide 'common-configure)
