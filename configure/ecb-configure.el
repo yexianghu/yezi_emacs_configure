@@ -3,7 +3,7 @@
 
 
 (global-set-key [f9] (lambda() (interactive) 
-                       (if ecb-minor-mode 
+                       (if (and (boundp 'ecb-minor-mode) ecb-minor-mode)
                            (ecb-deactivate) 
                          (ecb-activate))))
 '(ecb-tip-of-the-day ni)

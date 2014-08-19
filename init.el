@@ -8,6 +8,7 @@
 (require 'module)
 
 ;;for configure
+
 (require 'configure)
 
 ;;for keybind
@@ -29,6 +30,7 @@
  '(ecb-options-version "2.40")
  '(ecb-tip-of-the-day nil)
  '(fci-rule-color "#eee8d5")
+ '(ibus-common-function-key-list (quote ((control ".") (control ",") (control "<") (control ">") (control "/") (control " ") (shift " ") (control alt left) (control alt right) (control alt up) (control alt down) (zenkaku-hankaku) (henkan) (shift henkan) (alt henkan) (muhenkan) (hiragana-katakana) (alt romaji) (kp-space) (kp-equal) (kp-multiply) (kp-add) (kp-separator) (kp-subtract) (kp-decimal) (kp-divide) (kp-0) (kp-1) (kp-2) (kp-3) (kp-4) (kp-5) (kp-6) (kp-7) (kp-8) (kp-9))))
  '(org-agenda-files (quote ("~/test.org")))
  '(vc-annotate-background nil)
  '(vc-annotate-color-map (quote ((20 . "#dc322f") (40 . "#cb4b16") (60 . "#b58900") (80 . "#859900") (100 . "#2aa198") (120 . "#268bd2") (140 . "#d33682") (160 . "#6c71c4") (180 . "#dc322f") (200 . "#cb4b16") (220 . "#b58900") (240 . "#859900") (260 . "#2aa198") (280 . "#268bd2") (300 . "#d33682") (320 . "#6c71c4") (340 . "#dc322f") (360 . "#cb4b16"))))
