@@ -1,8 +1,8 @@
  ;;feature list
 
 (require 'elpa-configure)
-(require 'helm-configure)
-;(require 'ido-configure)
+;(require 'helm-configure)
+(require 'ido-configure)
 (require 'yasnippet-configure)
 (require 'autocomplete-configure)
 ;(require 'elisphelp-configure)

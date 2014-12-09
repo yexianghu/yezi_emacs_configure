@@ -12,6 +12,9 @@
 (require-package 'org-ac)
 (require 'org-ac)
 
+(require-package 'ac-python)
+(require 'ac-python)
+
 (org-ac/config-default)
 
 
