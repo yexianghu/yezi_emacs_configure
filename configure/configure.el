@@ -29,5 +29,5 @@
 (require 'org-mode-configure)
 (require 'ibus-configure)
 ;(require 'swbuff-configure)
-
+(require 'markdown-mode-configure)
 (provide 'configure)

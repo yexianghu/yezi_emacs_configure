@@ -10,8 +10,9 @@
 (add-hook 'ecb-deactivate-hook
 	  (lambda () (modify-all-frames-parameters '((width . 80)))))
 ;; resize the ECB window to be default (order matters here)
-(add-hook 'ecb-activate-hook (lambda () (ecb-redraw-layout)
-                               (ecb-maximize-window-methods)))
+
+;(add-hook 'ecb-activate-hook (lambda () (ecb-redraw-layout)
+;                               (ecb-maximize-window-methods)))
 ;; (add-hook 'ecb-activate-hook
 ;; 	  (lambda () (modify-all-frames-parameters '((width . 100)))))
 
