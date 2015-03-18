@@ -5,5 +5,5 @@
 (add-to-list 'load-path' "~/.emacs.d/module/ggtags")
 (add-to-list 'load-path' "~/.emacs.d/module/projectile-speedbar")
 (add-to-list 'load-path' "~/.emacs.d/module/ibus/ibus-el-0.3.2")
-
+(add-to-list 'load-path' "~/.emacs.d/module/lazy-set-key")
 (provide 'module)

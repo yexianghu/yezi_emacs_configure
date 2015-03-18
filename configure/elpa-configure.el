@@ -81,3 +81,4 @@ re-downloaded in order to locate PACKAGE."
 
 
 (provide 'elpa-configure)
+
