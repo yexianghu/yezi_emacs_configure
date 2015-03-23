@@ -25,6 +25,20 @@
   (shell-command-to-string
    "git log --pretty='format:%H' -1"))
 
+(defun helm-r-grep ()
+  (interactive)
+  (require 'helm-mode)
+  (let* ((preselection (or (dired-get-filename nil t)
+                           (buffer-file-name (current-buffer))))
+         (only    (helm-read-file-name
+                   "Search in file(s): "
+                   :marked-candidates t
+                   :preselect (and helm-do-grep-preselect-candidate
+                                   (if helm-ff-transformer-show-only-basename
+                                       (helm-basename preselection)
+                                     preselection))))
+         (prefarg (or current-prefix-arg helm-current-prefix-arg)))
+    (helm-do-grep-1 t prefarg)))
 
 ;;; Helm-command-map
 ;;
@@ -48,7 +62,7 @@
 (global-set-key (kbd "C-x r b")                      'helm-filtered-bookmarks)
 (global-set-key (kbd "C-h r")                        'helm-info-emacs)
 (global-set-key (kbd "C-:")                          'helm-eval-expression-with-eldoc)
-(global-set-key (kbd "C-x g")                        'helm-do-grep)
+(global-set-key (kbd "C-x g")                        'helm-r-grep)
 ;(global-set-key (kbd "C-,")                          'helm-calcul-expression)
 (global-set-key (kbd "C-h d")                        'helm-info-at-point)
 (global-set-key (kbd "C-c C-s")                        'helm-google-suggest)
@@ -139,8 +153,8 @@ First call indent, second complete symbol, third complete fname."
       helm-pdfgrep-default-read-command          "evince --page-label=%p '%f'"
       ;helm-ff-transformer-show-only-basename     t
       helm-ff-auto-update-initial-value          t
-      helm-grep-default-command                  "ack-grep -Hn --smart-case --no-group %e %p %f"
-      helm-grep-default-recurse-command          "ack-grep -H --smart-case --no-group %e %p %f"
+      helm-grep-default-command                  "ack-grep -aHn --smart-case --no-group %e %p %f"
+      helm-grep-default-recurse-command          "ack-grep -aH --smart-case --no-group %e %p %f"
       ;; Allow skipping unwanted files specified in ~/.gitignore_global
       ;; Added in my .gitconfig with "git config --global core.excludesfile ~/.gitignore_global"
       helm-ls-git-grep-command                   "git grep -n%cH --color=always --exclude-standard --no-index --full-name -e %p %f"
@@ -171,7 +185,7 @@ First call indent, second complete symbol, third complete fname."
       helm-lisp-fuzzy-completion                  t
       ;helm-locate-fuzzy-match                     t
       helm-completion-in-region-fuzzy-match       t
-      helm-move-to-line-cycle-in-source           t
+      helm-move-to-line-cycle-in-source           nil
       ido-use-virtual-buffers                     t             ; Needed in helm-buffers-list
       helm-tramp-verbose                          6
       helm-buffers-fuzzy-matching                 t
