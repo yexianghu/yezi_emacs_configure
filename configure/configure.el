@@ -32,4 +32,5 @@
 (require 'ibus-configure)
 ;(require 'swbuff-configure)
 (require 'markdown-mode-configure)
+(require 'android-mode-configure)
 (provide 'configure)
