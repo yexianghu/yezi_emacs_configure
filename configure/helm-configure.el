@@ -153,7 +153,7 @@ First call indent, second complete symbol, third complete fname."
       helm-pdfgrep-default-read-command          "evince --page-label=%p '%f'"
       ;helm-ff-transformer-show-only-basename     t
       helm-ff-auto-update-initial-value          t
-      helm-grep-default-command                  "ack-grep -aHn --smart-case --no-group %e %p %f"
+      helm-grep-default-command                  "ack-grep -aH --smart-case --no-group %e %p %f"
       helm-grep-default-recurse-command          "ack-grep -aH --smart-case --no-group %e %p %f"
       ;; Allow skipping unwanted files specified in ~/.gitignore_global
       ;; Added in my .gitconfig with "git config --global core.excludesfile ~/.gitignore_global"
