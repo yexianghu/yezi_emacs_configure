@@ -39,6 +39,14 @@
                                      preselection))))
          (prefarg (or current-prefix-arg helm-current-prefix-arg)))
     (helm-do-grep-1 t prefarg)))
+
+(defvar helm-custom-imenu-hook nil)
+
+(defun helm-custom-imenu (arg)
+  (interactive "P")
+  (run-hooks 'helm-custom-imenu-hook)
+  (helm-semantic-or-imenu arg)
+)
 
 ;;; Helm-command-map
 ;;
@@ -70,7 +78,7 @@
 (global-set-key (kbd "<f1>")                         'helm-resume)
 (global-set-key (kbd "C-h C-f")                      'helm-apropos)
 ;(global-set-key (kbd "<f2>")                         'helm-execute-kmacro)
-(global-set-key (kbd "<f3>")                         'helm-semantic-or-imenu)
+(global-set-key (kbd "<f3>")                         'helm-custom-imenu)
 (define-key global-map [remap jump-to-register]      'helm-register)
 (define-key global-map [remap list-buffers]          'helm-buffers-list)
 (define-key global-map [remap dabbrev-expand]        'helm-dabbrev)

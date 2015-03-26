@@ -10,3 +10,4 @@ projectile.cache
 semanticdb
 session.*
 helm-adaptive-history
+eclim-workspace
