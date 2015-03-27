@@ -11,6 +11,7 @@
   '(eclim-executable "~/tools/eclipse/eclim")
   '(eclimd-default-workspace "~/.emacs.d/eclim-workspace")
   '(eclimd-executable "~/tools/eclipse/eclimd")
+  ;'(eclim-auto-save nil)
   '(eclimd-wait-for-process nil)
 )
 
