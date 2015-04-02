@@ -7,6 +7,7 @@
  '(ggtags-enable-navigation-keys nil)
 )
 
+
 (defun do-init ()
   (define-key ggtags-mode-map (kbd "M-]") nil)
   (define-key ggtags-mode-map (kbd "<f11>") 'ggtags-find-tag-dwim)

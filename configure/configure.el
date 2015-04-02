@@ -34,4 +34,6 @@
 (require 'markdown-mode-configure)
 (require 'android-mode-configure)
 ;(require 'emacs-eclim-configure)
+(require 'rainbow-delimiters-configure)
+(require 'smart-tab-configure)
 (provide 'configure)
