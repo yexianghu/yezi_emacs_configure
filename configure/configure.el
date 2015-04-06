@@ -36,4 +36,6 @@
 ;(require 'emacs-eclim-configure)
 (require 'rainbow-delimiters-configure)
 (require 'smart-tab-configure)
+(require 'flymake-configure)
+(require 'autopair-configure)
 (provide 'configure)
