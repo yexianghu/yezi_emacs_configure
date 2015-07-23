@@ -3,7 +3,7 @@
 
 
 (custom-set-variables
- '(ggtags-executable-directory "~/bin/")
+ '(ggtags-executable-directory "/usr/bin/")
  '(ggtags-enable-navigation-keys nil)
 )
 
