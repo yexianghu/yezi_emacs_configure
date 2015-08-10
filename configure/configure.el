@@ -1,4 +1,5 @@
  ;;feature list
+(package-list-packages)
 (require 'eieio)
 (require 'elpa-configure)
 (require 'helm-configure)
