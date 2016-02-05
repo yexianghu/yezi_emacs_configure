@@ -1,5 +1,5 @@
  ;;feature list
-(package-list-packages)
+(package-refresh-contents)
 (require 'eieio)
 (require 'elpa-configure)
 (require 'helm-configure)
@@ -40,5 +40,5 @@
 (require 'flymake-configure)
 (require 'autopair-configure)
 (require 'clojure-configure)
-
+(require 'dict-configure)
 (provide 'configure)

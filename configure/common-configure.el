@@ -3,6 +3,14 @@
 
 ;;show line number
 (global-linum-mode 1)
+(add-to-list 'exec-path "/usr/local/bin")
+(setq shell-command-switch "-ic")
+(setenv "PATH"
+  (concat
+   "/usr/local/bin" ":"
+   (getenv "PATH")
+  )
+)
 ;(setq debug-on-error t)
 ;;for backup fils
 (setq backup-directory-alist `(("." . "~/.saves")))

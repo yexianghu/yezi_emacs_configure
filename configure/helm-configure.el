@@ -1,6 +1,7 @@
 ;doc http://tuhdo.github.io/helm-intro.html
 (require-package 'helm)
 (require-package 'helm-ls-git)
+;(require-package 'helm-dictionary)
 (require 'helm)
 
 (require 'helm-config)
@@ -12,6 +13,8 @@
 (helm-mode 1)
 (helm-adaptative-mode 1)
 ;(helm-autoresize-mode 1)
+
+;(autoload 'helm-dictionary "helm-dictionary" "" t)
 
 (defun helm-version ()
   (with-current-buffer (find-file-noselect (find-library-name "helm-pkg"))
