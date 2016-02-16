@@ -1,6 +1,7 @@
 ;doc http://tuhdo.github.io/helm-intro.html
 (require-package 'helm)
 (require-package 'helm-ls-git)
+
 ;(require-package 'helm-dictionary)
 (require 'helm)
 
@@ -9,6 +10,7 @@
 (require 'helm-files)
 (require 'helm-grep)
 (require 'helm-ls-git)
+
 
 (helm-mode 1)
 (helm-adaptative-mode 1)
@@ -82,6 +84,7 @@
 (global-set-key (kbd "C-h C-f")                      'helm-apropos)
 ;(global-set-key (kbd "<f2>")                         'helm-execute-kmacro)
 (global-set-key (kbd "<f3>")                         'helm-custom-imenu)
+(global-set-key (kbd "<f4>")                         'helm-projectile-ag)
 (define-key global-map [remap jump-to-register]      'helm-register)
 (define-key global-map [remap list-buffers]          'helm-buffers-list)
 (define-key global-map [remap dabbrev-expand]        'helm-dabbrev)
