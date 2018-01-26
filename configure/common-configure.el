@@ -138,4 +138,6 @@
 
 (setq visible-bell t
  ring-bell-function 'ignore)
+;(setq url-proxy-services '(("http" . "http://fq.mioffice.cn:3128")))
+;(setq url-proxy-services '(("https" . "http://fq.mioffice.cn:3128")))
 (provide 'common-configure)

@@ -6,11 +6,14 @@
 (require 'helm-projectile)
 
 
-(projectile-global-mode)
+;(projectile-global-mode)
+(projectile-mode)
+
 (setq projectile-completion-system 'helm)
 (helm-projectile-on)
 
-;(setq projectile-indexing-method 'native)
+
+(setq projectile-indexing-method 'native)
 (setq projectile-enable-caching t)
 (setq projectile-globally-ignored-files (append '("*.o" "*.so" ".git") projectile-globally-ignored-files))
 

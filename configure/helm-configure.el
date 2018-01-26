@@ -13,8 +13,8 @@
 
 
 (helm-mode 1)
-(helm-adaptative-mode 1)
-;(helm-autoresize-mode 1)
+(setq helm-adaptative-mode 1)
+(setq helm-autoresize-mode 1)
 
 ;(autoload 'helm-dictionary "helm-dictionary" "" t)
 

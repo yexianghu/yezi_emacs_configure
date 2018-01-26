@@ -39,6 +39,6 @@
 (require 'smart-tab-configure)
 (require 'flymake-configure)
 (require 'autopair-configure)
-(require 'clojure-configure)
+;(require 'clojure-configure)
 (require 'dict-configure)
 (provide 'configure)
